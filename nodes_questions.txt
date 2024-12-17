@@ -1,0 +1,102 @@
+NodeJS Interview questions:
+
+What is middleware in Express.js?
+Explain the difference between npm and npx.
+How do you use WebSockets in Node.js?
+What is the purpose of the query string module in Node.js?
+How do you use the events module in Node.js?
+Explain the use of async/await in Node.js.
+What is the event loop in Node.js?
+How do you optimize performance in a Node.js application?
+How do you handle CORS in a Node.js application?
+How do you implement real-time applications using Socket.io in Node.js?
+How do you manage dependencies in a Node.js project?
+What is a middleware stack in Express.js?
+How do you perform load testing on a Node.js application?
+What are the advantages of using Node.js?
+How do you implement OAuth authentication in Node.js?
+What is the purpose of the tty module in Node.js?
+How do you perform HTTP requests in Node.js?
+What is the purpose of the crypto module in Node.js?
+Explain the concept of a package-lock.json file in Node.js.
+How do you secure a Node.js application?
+How do you perform file operations in Node.js?
+What is the difference between fs.readFile() and fs.readFileSync()?
+Describe the role of the child_process module in Node.js.
+What is the role of the REPL in Node.js?
+How do you manage sessions in Express.js?
+Explain the role of the cluster module in Node.js.
+How does Node.js handle multiple requests?
+What is the purpose of the Buffer class in Node.js?
+How do you create a child process in Node.js?
+What are streams, and how do you use them in Node.js?
+Describe the use of process.nextTick() in Node.js.
+How do you handle file uploads in Node.js?
+What is RESTful API and how do you implement it in Node.js?
+What are the differences between CommonJS and ES Modules?
+What is the purpose of the os module in Node.js?
+Explain the concept of streams in Node.js.
+How do you implement internationalization (i18n) in Node.js?
+How do you implement a web socket server in Node.js?
+What is a microservice architecture, and how can you implement it in Node.js?
+How do you handle JSON data in Node.js?
+What is the purpose of the process object in Node.js?
+How does clustering work in Node.js?
+How do you perform unit testing in Node.js?
+What is the purpose of the Punycode module in Node.js?
+How do you integrate Node.js with MongoDB?
+What are the benefits of using TypeScript with Node.js?
+What is the difference between fork() and spawn() in Node.js?
+What are the differences between GET and POST methods in HTTP?
+How do you handle child processes in Node.js?
+What is a singleton pattern, and how can you implement it in Node.js?
+Describe the concept of callback hell and how to avoid it in Node.js.
+What are the best practices for error handling in Node.js?
+How do you implement sessions in Node.js?
+Describe the concept of middleware in Express.js.
+What is a JWT, and how do you use it in Node.js?
+Explain the purpose of the URL module in Node.js.
+What is the purpose of the v8 module in Node.js?
+Describe the role of package.json in a Node.js project.
+How do you handle SSL/TLS in Node.js?
+What is npm?
+Explain the concept of non-blocking I/O in Node.js.
+What is the role of Mongoose in a Node.js project?
+What are the differences between PUT and PATCH methods in HTTP?
+How do you create a REST API using Hapi.js?
+How do you create a GraphQL API in Node.js?
+Describe the purpose of the util module in Node.js.
+How do you handle routing in Express.js?
+How do you use middleware in Koa.js?
+How do you perform file paths in a cross-platform way in Node.js?
+How does Node.js handle memory management?
+How do you implement a RESTful API using Express.js?
+What is the purpose of the DNS module in Node.js?
+Explain the concept of closures in Node.js.
+How do you use the ‘assert’ module in Node.js?
+What is the purpose of the timers module in Node.js?
+What is the purpose of the readline module in Node.js?
+How do you use the async module in Node.js?
+Describe the role of the path module in Node.js.
+Explain the concept of ‘require’ in Node.js.
+How do you deploy a Node.js application?
+What is the difference between synchronous and asynchronous code in Node.js?
+What are the best practices for logging in a Node.js application?
+How do you test a Node.js application?
+How do you manage environment variables in Node.js?
+What is a callback function in Node.js?
+Describe the role of the cluster module in Node.js.
+What is the difference between setImmediate() and setTimeout() in Node.js?
+How do you implement a RESTful API using Express.js?
+How do you optimize performance in a Node.js application?
+What is a NoSQL database, and how do you use it with Node.js?
+What is the purpose of the http module in Node.js?
+What are the differences between var, let, and const in JavaScript?
+What is the purpose of the net module in Node.js?
+What is the purpose of the zlib module in Node.js?
+What is the purpose of the Buffer class in Node.js?
+How do you create a GraphQL API in Node.js?
+How do you perform HTTP requests in Node.js?
+Describe the use of process.nextTick() in Node.js.
+What is the purpose of the http module in Node.js?
+Explain the purpose of the URL module in Node.js.
