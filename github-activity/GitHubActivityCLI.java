@@ -1,9 +1,15 @@
+package org.example;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonParser;
+
 
 public class GitHubActivityCLI {
 
@@ -22,7 +28,8 @@ public class GitHubActivityCLI {
       HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
       if (response.statusCode() == 200){
-        System.out.println(response);
+        JsonArray jsonArray = JsonParser.parseString(response.body()).getAsJsonArray();
+        System.out.println("Hello1: "+jsonArray);
       } else {
           System.out.println("Error:" + response.statusCode());
       }
