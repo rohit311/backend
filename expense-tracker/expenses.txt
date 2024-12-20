@@ -1,0 +1,1 @@
+2024-12-04,Testing expense,30.0,milk
