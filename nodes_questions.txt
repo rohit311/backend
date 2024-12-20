@@ -1,4 +1,4 @@
-NodeJS Interview questions:
+NodeJS questions:
 
 What is middleware in Express.js?
 Explain the difference between npm and npx.
