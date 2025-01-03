@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.long_polling.LongPollingApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.707 s -- in com.example.long_polling.LongPollingApplicationTests
