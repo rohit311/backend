@@ -1,1 +1,2 @@
-Tutorial - https://codelabs.developers.google.com/codelabs/cloud-grpc-java#0
+- Tutorial - https://codelabs.developers.google.com/codelabs/cloud-grpc-java#0
+- REST vs gRPC - https://aws.amazon.com/compare/the-difference-between-grpc-and-rest/
