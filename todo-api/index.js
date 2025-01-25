@@ -4,6 +4,7 @@ const app = express();
 const PORT = 3000;
 const authMiddleware = require('./authMiddleware');
 const userUtils = require('./utils/user');
+const todoUtils = require('./utils/todo');
 
 
 app.use(express.json());
@@ -65,8 +66,34 @@ app.post('/login', async (req, res) => {
   }
 });
 
-app.post('/todos', authMiddleware.authenticateToken, (req, res) => {
+app.post('/todos', authMiddleware.authenticateToken, async (req, res) => {
+  try {
+    const query = "SELECT id,title, description FROM todos WHERE user_email = $1 ORDER BY id DESC LIMIT 1;";
+    const values = [req.user.email];
+    const result = await todoUtils.insertTodo(req, req.user.email);
+    const todo = await todoUtils.fetchTodo(query, values);
 
+    return res.status(201).json(todo);
+  } catch(error) {
+    console.log("error: ", error);
+    return res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+app.put('/todo/:todoid', authMiddleware.authenticateToken, async (req, res) => {
+  try {
+    const todoId = req.params.todoid;
+    const result = await todoUtils.updateTodo(todoId, req);
+
+    if (result.rowCount != 1) {
+      return res.status(400).json({error: "Record does not exist."});
+    }
+
+    return res.status(200).json(result.rows[0]);
+  } catch(error) {
+    console.log("error: 2", error);
+    return res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 app.listen(PORT, function () {
