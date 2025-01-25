@@ -8,6 +8,7 @@ const insertTodo = (req, userEmail) => {
 
   return new Promise((resolve, reject) => {
     dbClient.query(INSERT_STATEMENT, VALUES, (err, res) => {
+
       if (err) {
         reject(err);
       } else {
@@ -24,8 +25,8 @@ const updateTodo = (todoId, req) => {
 
   return new Promise((resolve, reject) => {
     dbClient.query(UPDATE_STATEMENT, VALUES, (err, res) => {
-      if (err) {
 
+      if (err) {
         reject(err);
       } else {
         console.log("result: ", res);
@@ -33,8 +34,23 @@ const updateTodo = (todoId, req) => {
       }
     });
   });
-
 }
+
+const deleteTodo = (todoId) => {
+  const DELETE_STATEMENT = 'DELETE FROM todos WHERE id = $1';
+  const VALUES = [todoId];
+
+  return new Promise((resolve, reject) => {
+    dbClient.query(DELETE_STATEMENT, VALUES, (err, res) => {
+
+      if (err) {
+        reject(err);
+      } else {
+        resolve(res);
+      }
+    });
+  });
+};
 
 const fetchTodo = (query, values) => {
   return new Promise((resolve, reject) => {
@@ -55,4 +71,4 @@ const fetchTodo = (query, values) => {
   });
 };
 
-module.exports = {insertTodo, updateTodo, fetchTodo};
+module.exports = {insertTodo, updateTodo, deleteTodo, fetchTodo};
