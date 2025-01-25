@@ -91,11 +91,27 @@ app.put('/todo/:todoid', authMiddleware.authenticateToken, async (req, res) => {
 
     return res.status(200).json(result.rows[0]);
   } catch(error) {
+    return res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+app.delete('/todo/:todoid', authMiddleware.authenticateToken, async (req, res) => {
+  try {
+    const todoId = req.params.todoid;
+    const result = await todoUtils.deleteTodo(todoId);
+
+    if (result.rowCount != 1) {
+      return res.status(400).json({error: "Record does not exist."});
+    }
+
+    return res.status(204).send();
+
+  } catch(error) {
     console.log("error: 2", error);
     return res.status(500).json({ error: "Internal server error" });
   }
 });
 
 app.listen(PORT, function () {
-  console.log('Example app listening on port ' + PORT + '!');
+  console.log('TODO app listening on port ' + PORT + '!');
 });
