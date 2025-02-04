@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.virtual_threads.VirtualThreadsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.782 s -- in com.example.virtual_threads.VirtualThreadsApplicationTests
