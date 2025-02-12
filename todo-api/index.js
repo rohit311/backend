@@ -2,12 +2,14 @@ const express = require('express');
 const { check, validationResult } = require('express-validator');
 const app = express();
 const PORT = 3000;
-const authMiddleware = require('./authMiddleware');
+const authMiddleware = require('./middlewares/authMiddleware');
+const rateLimitMiddleware = require("./middlewares/rateLimit");
 const userUtils = require('./utils/user');
 const todoUtils = require('./utils/todo');
 
 
 app.use(express.json());
+app.use(rateLimitMiddleware);
 app.post('/register',[
   [
     check('name').isLength({ min: 5, max: 50 }).withMessage('Name must be between 5 and 50 characters'),
