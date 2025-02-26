@@ -1,7 +1,7 @@
 
 # Weather API
 
-Weather api project for - https://roadmap.sh/projects/weather-api-wrapper-service
+Project url - https://roadmap.sh/projects/weather-api-wrapper-service
 
 ### Requirements:
 - Java 21
