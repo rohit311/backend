@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.uploading_files.UploadingFilesApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.352 s -- in com.example.uploading_files.UploadingFilesApplicationTests
