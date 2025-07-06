@@ -1,0 +1,4 @@
+net/javaguides/springboot/SpringBootProducerApplication.class
+net/javaguides/springboot/WikimediaChangesProducer.class
+net/javaguides/springboot/WikimediaChangesHandler.class
+net/javaguides/springboot/KakfaTopicConfig.class
