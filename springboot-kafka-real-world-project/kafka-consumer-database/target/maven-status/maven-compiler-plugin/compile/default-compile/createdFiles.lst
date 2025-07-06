@@ -1,0 +1,4 @@
+net/javaguides/springboot/SpringBootConsumerApplication.class
+net/javaguides/springboot/repository/WikimediaDataRepository.class
+net/javaguides/springboot/entity/WikimediaData.class
+net/javaguides/springboot/KafkaDatabaseConsumer.class
