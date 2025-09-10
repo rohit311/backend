@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.gateway.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.58 s <<< FAILURE! -- in com.example.gateway.ApplicationTest
+com.example.gateway.ApplicationTest.contextLoads -- Time elapsed: 5.884 s <<< ERROR!
+java.lang.IllegalStateException: Timeout on blocking read for 5000000000 NANOSECONDS
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:129)
+	at reactor.core.publisher.Mono.block(Mono.java:1807)
+	at org.springframework.test.web.reactive.server.DefaultWebTestClient$DefaultRequestBodyUriSpec.exchange(DefaultWebTestClient.java:369)
+	at com.example.gateway.ApplicationTest.contextLoads(ApplicationTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.util.concurrent.TimeoutException: Timeout on blocking read for 5000000000 NANOSECONDS
+	... 7 more
+
