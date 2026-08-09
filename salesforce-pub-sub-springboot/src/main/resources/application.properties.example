@@ -1,0 +1,57 @@
+# Salesforce Pub/Sub API Spring Boot Configuration Template
+# Copy this file to application.properties and configure with your values
+
+spring.application.name=salesforce-pub-sub-api-springboot
+
+# ========================================
+# JWT Configuration (RECOMMENDED)
+# ========================================
+# This is the recommended authentication method for Spring Boot 3.x
+
+# Your Salesforce Connected App Client ID (Consumer Key)
+SALESFORCE_CLIENT_ID=your_connected_app_client_id_here
+
+# Your Salesforce username (e.g., user@example.com)
+SALESFORCE_USERNAME=your_salesforce_username@example.com
+
+# Salesforce login URL (use https://test.salesforce.com for sandboxes)
+SALESFORCE_LOGIN_URL=https://login.salesforce.com
+
+# Path to your RSA private key file (generate using: openssl genrsa -out private.pem 2048)
+SALESFORCE_PRIVATE_KEY_PATH=/path/to/your/private-key.pem
+
+# ========================================
+# Event Subscription Configuration
+# ========================================
+
+# Enable/disable event listening
+EVENT_LISTENING_ON=true
+
+# Comma-separated list of event topics to subscribe to
+# Example: /event/LoginEventStream,/event/CustomEvent__e
+ACTIVE_EVENTS=/data/AccountChangeEvent
+
+# ========================================
+# Legacy OAuth Configuration (DEPRECATED)
+# ========================================
+# Only needed if you haven't migrated to JWT authentication yet
+
+# Your Salesforce instance domain URL
+SALESFORCE_DOMAIN_URL=https://your-instance.my.salesforce.com
+
+# OAuth Client ID (if using legacy auth)
+SALESFORCE_OAUTH_CLIENT_ID=
+
+# OAuth Client Secret (if using legacy auth) - NEVER commit this to version control!
+SALESFORCE_CLIENT_SECRET=
+
+# ========================================
+# Setup Instructions
+# ========================================
+# 1. Create a Salesforce Connected App with JWT Bearer Token Flow
+# 2. Generate an RSA private key: openssl genrsa -out private.pem 2048
+# 3. Extract public key: openssl rsa -in private.pem -pubout -out public.pem
+# 4. Upload public.pem to your Connected App in Salesforce
+# 5. Configure the values above with your credentials
+# 6. Set these as environment variables or copy this file to application.properties
+# 7. NEVER commit application.properties with real credentials to version control!
