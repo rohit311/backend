@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: pdf-summarier
+  
+  # CORRECT HIERARCHY FOR SPRING AI 2.0
+  ai:
+    model:
+      audio:
+        speech:
+          openai:
+            enabled: false
+            
+    # Ollama (LOCAL LLM)
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3
+      embedding:
+        options:
+          model: nomic-embed-text
+
+    # Vector DB (Qdrant)
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+        collection-name: pdf_docs
+        initialize-schema: true
+
+server:
+  port: 8080
+
+# Custom App Config (Keep this at the root level)
+app:
+  llm:
+    provider: ollama
+  rag:
+    top-k: 5
+    chunk-size: 1000
+    chunk-overlap: 200
