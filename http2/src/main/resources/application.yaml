@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: http2
+
+server:
+  port: 8443
+  http2:
+    enabled: true
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: http2test
+    key-store-type: PKCS12
+    key-alias: http2-test
