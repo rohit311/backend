@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: multimodal
+  datasource:
+    url: jdbc:postgresql://localhost:5432/expense_agent
+    username: rohitchavan          # Your local Postgres username
+    password:         # Your local Postgres password
+  jpa:
+    hibernate:
+      ddl-auto: update          # Automatically creates/updates the 'expenses' table
+      show-sql: true              # Logs generated SQL queries to your console
+  servlet:
+    max-file-size: 10MB
+    max-request-size: 10MB
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      init:
+        pull-model-strategy: when_missing # Auto-pulls if not already downloaded
+      chat:
+        options:
+          model: qwen3-vl      # Must match the exact tag from `ollama list`
+          temperature: 0.2     # Low temperature keeps tool JSON reliable
+          num-ctx: 8192        # Enough context for image tokens + tool schemas
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
