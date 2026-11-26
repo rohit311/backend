@@ -3,7 +3,7 @@ spring:
     name: mcpclient
   ai:
     mcp:
-      token: y8xv4dy62s22j3egli2zwdyqose9xznrkkld3eacodarjfsjws
+      token: <token>
       client:
         streamable-http:
           connections:
