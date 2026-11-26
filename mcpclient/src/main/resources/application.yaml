@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: mcpclient
+  ai:
+    mcp:
+      token: y8xv4dy62s22j3egli2zwdyqose9xznrkkld3eacodarjfsjws
+      client:
+        streamable-http:
+          connections:
+            docker-mcp-gateway:
+              url: http://localhost:8811
+    ollama:
+      base-url: http://localhost:11434
+      init:
+        pull-model-strategy: when_missing # Auto-pulls if not already downloaded
+      chat:
+        options:
+          model: qwen3-vl      # Must match the exact tag from `ollama list`
+          temperature: 0.2     # Low temperature keeps tool JSON reliable
+          num-ctx: 8192        # Enough context for image tokens + tool schemas
+

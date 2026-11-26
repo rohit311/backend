@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.mcpclient.McpclientApplicationTests" time="0.567" tests="1" errors="1" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="26"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/rohitchavan/my-projects/mcpclient/target/test-classes:/Users/rohitchavan/my-projects/mcpclient/target/classes:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.2.0/spring-boot-starter-webmvc-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter/4.2.0/spring-boot-starter-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.2.0/spring-boot-starter-logging-4.2.0.jar:/Users/rohitchavan/.m2/repository/ch/qos/logback/logback-classic/1.6.6/logback-classic-1.6.6.jar:/Users/rohitchavan/.m2/repository/ch/qos/logback/logback-core/1.6.6/logback-core-1.6.6.jar:/Users/rohitchavan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.26.1/log4j-to-slf4j-2.26.1.jar:/Users/rohitchavan/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar:/Users/rohitchavan/.m2/repository/org/slf4j/jul-to-slf4j/2.0.20/jul-to-slf4j-2.0.20.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.2.0/spring-boot-autoconfigure-4.2.0.jar:/Users/rohitchavan/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/rohitchavan/.m2/repository/org/yaml/snakeyaml/2.7/snakeyaml-2.7.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.2.0/spring-boot-starter-jackson-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-jackson/4.2.0/spring-boot-jackson-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.2.0/spring-boot-starter-tomcat-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.2.0/spring-boot-starter-tomcat-runtime-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.27/tomcat-embed-core-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.27/tomcat-embed-el-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.27/tomcat-embed-websocket-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.2.0/spring-boot-tomcat-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.2.0/spring-boot-http-converter-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot/4.2.0/spring-boot-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-web/7.1.0/spring-web-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-beans/7.1.0/spring-beans-7.1.0.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-observation/1.18.0/micrometer-observation-1.18.0.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-commons/1.18.0/micrometer-commons-1.18.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.2.0/spring-boot-webmvc-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-servlet/4.2.0/spring-boot-servlet-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-webmvc/7.1.0/spring-webmvc-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-aop/7.1.0/spring-aop-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-expression/7.1.0/spring-expression-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.2.0/spring-boot-starter-web-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-starter-model-ollama/2.1.0-M1/spring-ai-starter-model-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webclient/4.2.0/spring-boot-starter-webclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-reactor/4.2.0/spring-boot-reactor-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webclient/4.2.0/spring-boot-webclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-client/4.2.0/spring-boot-http-client-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-codec/4.2.0/spring-boot-http-codec-4.2.0.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.4.0/reactor-netty-http-1.4.0.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http/4.2.20.Final/netty-codec-http-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-common/4.2.20.Final/netty-common-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-buffer/4.2.20.Final/netty-buffer-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport/4.2.20.Final/netty-transport-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-base/4.2.20.Final/netty-codec-base-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-compression/4.2.20.Final/netty-codec-compression-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-handler/4.2.20.Final/netty-handler-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http2/4.2.20.Final/netty-codec-http2-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http3/4.2.20.Final/netty-codec-http3-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-classes-quic/4.2.20.Final/netty-codec-classes-quic-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-linux-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-linux-aarch_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-osx-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-osx-aarch_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-windows-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns/4.2.20.Final/netty-resolver-dns-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver/4.2.20.Final/netty-resolver-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-dns/4.2.20.Final/netty-codec-dns-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.2.20.Final/netty-resolver-dns-native-macos-4.2.20.Final-osx-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.2.20.Final/netty-resolver-dns-classes-macos-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-native-epoll/4.2.20.Final/netty-transport-native-epoll-4.2.20.Final-linux-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.20.Final/netty-transport-native-unix-common-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-classes-epoll/4.2.20.Final/netty-transport-classes-epoll-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.4.0/reactor-netty-core-1.4.0.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-handler-proxy/4.2.20.Final/netty-handler-proxy-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-socks/4.2.20.Final/netty-codec-socks-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-restclient/4.2.0/spring-boot-starter-restclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-restclient/4.2.0/spring-boot-restclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-ollama/2.1.0-M1/spring-ai-autoconfigure-model-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-retry/2.1.0-M1/spring-ai-autoconfigure-retry-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-tool/2.1.0-M1/spring-ai-autoconfigure-model-tool-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-observation/2.1.0-M1/spring-ai-autoconfigure-model-chat-observation-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-embedding-observation/2.1.0-M1/spring-ai-autoconfigure-model-embedding-observation-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-ollama/2.1.0-M1/spring-ai-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-model/2.1.0-M1/spring-ai-model-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-commons/2.1.0-M1/spring-ai-commons-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-core/1.18.0/micrometer-core-1.18.0.jar:/Users/rohitchavan/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/rohitchavan/.m2/repository/io/micrometer/context-propagation/1.2.1/context-propagation-1.2.1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-template-st/2.1.0-M1/spring-ai-template-st-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/antlr/ST4/4.3.4/ST4-4.3.4.jar:/Users/rohitchavan/.m2/repository/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-messaging/7.1.0/spring-messaging-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-module-jackson/5.0.0/jsonschema-module-jackson-5.0.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-retry/2.1.0-M1/spring-ai-retry-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-webflux/7.1.0/spring-webflux-7.1.0.jar:/Users/rohitchavan/.m2/repository/tools/jackson/core/jackson-databind/3.1.8/jackson-databind-3.1.8.jar:/Users/rohitchavan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/rohitchavan/.m2/repository/tools/jackson/core/jackson-core/3.1.8/jackson-core-3.1.8.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-client-chat/2.1.0-M1/spring-ai-client-chat-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/com/networknt/json-schema-validator/3.0.1/json-schema-validator-3.0.1.jar:/Users/rohitchavan/.m2/repository/com/ethlo/time/itu/1.14.0/itu-1.14.0.jar:/Users/rohitchavan/.m2/repository/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/Users/rohitchavan/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.38/swagger-annotations-jakarta-2.2.38.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-module-swagger-2/5.0.0/jsonschema-module-swagger-2-5.0.0.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/reactor-core/3.9.0/reactor-core-3.9.0.jar:/Users/rohitchavan/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-context/7.1.0/spring-context-7.1.0.jar:/Users/rohitchavan/.m2/repository/com/knuddels/jtokkit/1.1.0/jtokkit-1.1.0.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-generator/5.0.0/jsonschema-generator-5.0.0.jar:/Users/rohitchavan/.m2/repository/com/fasterxml/classmate/1.8.0/classmate-1.8.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-client/2.1.0-M1/spring-ai-autoconfigure-model-chat-client-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-memory/2.1.0-M1/spring-ai-autoconfigure-model-chat-memory-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.2.0/spring-boot-starter-webmvc-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.2.0/spring-boot-starter-jackson-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.2.0/spring-boot-starter-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-test/4.2.0/spring-boot-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.2.0/spring-boot-test-autoconfigure-4.2.0.jar:/Users/rohitchavan/.m2/repository/com/jayway/jsonpath/json-path/3.0.0/json-path-3.0.0.jar:/Users/rohitchavan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/Users/rohitchavan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/rohitchavan/.m2/repository/net/minidev/json-smart/2.6.1/json-smart-2.6.1.jar:/Users/rohitchavan/.m2/repository/net/minidev/accessors-smart/2.6.1/accessors-smart-2.6.1.jar:/Users/rohitchavan/.m2/repository/org/ow2/asm/asm/9.11.1/asm-9.11.1.jar:/Users/rohitchavan/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/Users/rohitchavan/.m2/repository/net/bytebuddy/byte-buddy/1.18.17/byte-buddy-1.18.17.jar:/Users/rohitchavan/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/rohitchavan/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter/6.1.3/junit-jupiter-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rohitchavan/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.1.3/junit-jupiter-params-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.1.3/junit-jupiter-engine-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/platform/junit-platform-engine/6.1.3/junit-platform-engine-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/mockito/mockito-core/5.24.0/mockito-core-5.24.0.jar:/Users/rohitchavan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.17/byte-buddy-agent-1.18.17.jar:/Users/rohitchavan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rohitchavan/.m2/repository/org/mockito/mockito-junit-jupiter/5.24.0/mockito-junit-jupiter-5.24.0.jar:/Users/rohitchavan/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/rohitchavan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-core/7.1.0/spring-core-7.1.0.jar:/Users/rohitchavan/.m2/repository/commons-logging/commons-logging/1.4.0/commons-logging-1.4.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-test/7.1.0/spring-test-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/xmlunit/xmlunit-core/2.14.0/xmlunit-core-2.14.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.2.0/spring-boot-webmvc-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-web-server/4.2.0/spring-boot-web-server-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.2.0/spring-boot-resttestclient-4.2.0.jar"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="26"/>
+    <property name="APPLICATION_NAME" value="mcpclient"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/26.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/rohitchavan/my-projects/mcpclient/target/surefire/surefirebooter-20261126113018087_3.jar /Users/rohitchavan/my-projects/mcpclient/target/surefire 2026-11-26T11-30-18_037-jvmRun1 surefire-20261126113018087_1tmp surefire_0-20261126113018087_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/rohitchavan/my-projects/mcpclient/target/test-classes:/Users/rohitchavan/my-projects/mcpclient/target/classes:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.2.0/spring-boot-starter-webmvc-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter/4.2.0/spring-boot-starter-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.2.0/spring-boot-starter-logging-4.2.0.jar:/Users/rohitchavan/.m2/repository/ch/qos/logback/logback-classic/1.6.6/logback-classic-1.6.6.jar:/Users/rohitchavan/.m2/repository/ch/qos/logback/logback-core/1.6.6/logback-core-1.6.6.jar:/Users/rohitchavan/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.26.1/log4j-to-slf4j-2.26.1.jar:/Users/rohitchavan/.m2/repository/org/apache/logging/log4j/log4j-api/2.26.1/log4j-api-2.26.1.jar:/Users/rohitchavan/.m2/repository/org/slf4j/jul-to-slf4j/2.0.20/jul-to-slf4j-2.0.20.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.2.0/spring-boot-autoconfigure-4.2.0.jar:/Users/rohitchavan/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/rohitchavan/.m2/repository/org/yaml/snakeyaml/2.7/snakeyaml-2.7.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.2.0/spring-boot-starter-jackson-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-jackson/4.2.0/spring-boot-jackson-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.2.0/spring-boot-starter-tomcat-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.2.0/spring-boot-starter-tomcat-runtime-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.27/tomcat-embed-core-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.27/tomcat-embed-el-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.27/tomcat-embed-websocket-11.0.27.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.2.0/spring-boot-tomcat-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.2.0/spring-boot-http-converter-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot/4.2.0/spring-boot-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-web/7.1.0/spring-web-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-beans/7.1.0/spring-beans-7.1.0.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-observation/1.18.0/micrometer-observation-1.18.0.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-commons/1.18.0/micrometer-commons-1.18.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.2.0/spring-boot-webmvc-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-servlet/4.2.0/spring-boot-servlet-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-webmvc/7.1.0/spring-webmvc-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-aop/7.1.0/spring-aop-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-expression/7.1.0/spring-expression-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.2.0/spring-boot-starter-web-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-starter-model-ollama/2.1.0-M1/spring-ai-starter-model-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webclient/4.2.0/spring-boot-starter-webclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-reactor/4.2.0/spring-boot-reactor-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webclient/4.2.0/spring-boot-webclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-client/4.2.0/spring-boot-http-client-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-http-codec/4.2.0/spring-boot-http-codec-4.2.0.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.4.0/reactor-netty-http-1.4.0.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http/4.2.20.Final/netty-codec-http-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-common/4.2.20.Final/netty-common-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-buffer/4.2.20.Final/netty-buffer-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport/4.2.20.Final/netty-transport-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-base/4.2.20.Final/netty-codec-base-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-compression/4.2.20.Final/netty-codec-compression-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-handler/4.2.20.Final/netty-handler-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http2/4.2.20.Final/netty-codec-http2-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-http3/4.2.20.Final/netty-codec-http3-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-classes-quic/4.2.20.Final/netty-codec-classes-quic-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-linux-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-linux-aarch_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-osx-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-osx-aarch_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-native-quic/4.2.20.Final/netty-codec-native-quic-4.2.20.Final-windows-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns/4.2.20.Final/netty-resolver-dns-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver/4.2.20.Final/netty-resolver-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-dns/4.2.20.Final/netty-codec-dns-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.2.20.Final/netty-resolver-dns-native-macos-4.2.20.Final-osx-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.2.20.Final/netty-resolver-dns-classes-macos-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-native-epoll/4.2.20.Final/netty-transport-native-epoll-4.2.20.Final-linux-x86_64.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-native-unix-common/4.2.20.Final/netty-transport-native-unix-common-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-transport-classes-epoll/4.2.20.Final/netty-transport-classes-epoll-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.4.0/reactor-netty-core-1.4.0.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-handler-proxy/4.2.20.Final/netty-handler-proxy-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/io/netty/netty-codec-socks/4.2.20.Final/netty-codec-socks-4.2.20.Final.jar:/Users/rohitchavan/.m2/repository/org/jspecify/jspecify/1.0.1/jspecify-1.0.1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-restclient/4.2.0/spring-boot-starter-restclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-restclient/4.2.0/spring-boot-restclient-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-ollama/2.1.0-M1/spring-ai-autoconfigure-model-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-retry/2.1.0-M1/spring-ai-autoconfigure-retry-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-tool/2.1.0-M1/spring-ai-autoconfigure-model-tool-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-observation/2.1.0-M1/spring-ai-autoconfigure-model-chat-observation-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-embedding-observation/2.1.0-M1/spring-ai-autoconfigure-model-embedding-observation-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-ollama/2.1.0-M1/spring-ai-ollama-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-model/2.1.0-M1/spring-ai-model-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-commons/2.1.0-M1/spring-ai-commons-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/io/micrometer/micrometer-core/1.18.0/micrometer-core-1.18.0.jar:/Users/rohitchavan/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/Users/rohitchavan/.m2/repository/io/micrometer/context-propagation/1.2.1/context-propagation-1.2.1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-template-st/2.1.0-M1/spring-ai-template-st-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/antlr/ST4/4.3.4/ST4-4.3.4.jar:/Users/rohitchavan/.m2/repository/org/antlr/antlr-runtime/3.5.3/antlr-runtime-3.5.3.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-messaging/7.1.0/spring-messaging-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-module-jackson/5.0.0/jsonschema-module-jackson-5.0.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-retry/2.1.0-M1/spring-ai-retry-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-webflux/7.1.0/spring-webflux-7.1.0.jar:/Users/rohitchavan/.m2/repository/tools/jackson/core/jackson-databind/3.1.8/jackson-databind-3.1.8.jar:/Users/rohitchavan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/Users/rohitchavan/.m2/repository/tools/jackson/core/jackson-core/3.1.8/jackson-core-3.1.8.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-client-chat/2.1.0-M1/spring-ai-client-chat-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/com/networknt/json-schema-validator/3.0.1/json-schema-validator-3.0.1.jar:/Users/rohitchavan/.m2/repository/com/ethlo/time/itu/1.14.0/itu-1.14.0.jar:/Users/rohitchavan/.m2/repository/org/slf4j/slf4j-api/2.0.20/slf4j-api-2.0.20.jar:/Users/rohitchavan/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.38/swagger-annotations-jakarta-2.2.38.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-module-swagger-2/5.0.0/jsonschema-module-swagger-2-5.0.0.jar:/Users/rohitchavan/.m2/repository/io/projectreactor/reactor-core/3.9.0/reactor-core-3.9.0.jar:/Users/rohitchavan/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-context/7.1.0/spring-context-7.1.0.jar:/Users/rohitchavan/.m2/repository/com/knuddels/jtokkit/1.1.0/jtokkit-1.1.0.jar:/Users/rohitchavan/.m2/repository/com/github/victools/jsonschema-generator/5.0.0/jsonschema-generator-5.0.0.jar:/Users/rohitchavan/.m2/repository/com/fasterxml/classmate/1.8.0/classmate-1.8.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-client/2.1.0-M1/spring-ai-autoconfigure-model-chat-client-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/ai/spring-ai-autoconfigure-model-chat-memory/2.1.0-M1/spring-ai-autoconfigure-model-chat-memory-2.1.0-M1.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.2.0/spring-boot-starter-webmvc-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.2.0/spring-boot-starter-jackson-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.2.0/spring-boot-starter-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-test/4.2.0/spring-boot-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.2.0/spring-boot-test-autoconfigure-4.2.0.jar:/Users/rohitchavan/.m2/repository/com/jayway/jsonpath/json-path/3.0.0/json-path-3.0.0.jar:/Users/rohitchavan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/Users/rohitchavan/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/Users/rohitchavan/.m2/repository/net/minidev/json-smart/2.6.1/json-smart-2.6.1.jar:/Users/rohitchavan/.m2/repository/net/minidev/accessors-smart/2.6.1/accessors-smart-2.6.1.jar:/Users/rohitchavan/.m2/repository/org/ow2/asm/asm/9.11.1/asm-9.11.1.jar:/Users/rohitchavan/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar:/Users/rohitchavan/.m2/repository/net/bytebuddy/byte-buddy/1.18.17/byte-buddy-1.18.17.jar:/Users/rohitchavan/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/rohitchavan/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter/6.1.3/junit-jupiter-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.1.3/junit-jupiter-api-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rohitchavan/.m2/repository/org/junit/platform/junit-platform-commons/6.1.3/junit-platform-commons-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.1.3/junit-jupiter-params-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.1.3/junit-jupiter-engine-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/junit/platform/junit-platform-engine/6.1.3/junit-platform-engine-6.1.3.jar:/Users/rohitchavan/.m2/repository/org/mockito/mockito-core/5.24.0/mockito-core-5.24.0.jar:/Users/rohitchavan/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.17/byte-buddy-agent-1.18.17.jar:/Users/rohitchavan/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rohitchavan/.m2/repository/org/mockito/mockito-junit-jupiter/5.24.0/mockito-junit-jupiter-5.24.0.jar:/Users/rohitchavan/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/rohitchavan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-core/7.1.0/spring-core-7.1.0.jar:/Users/rohitchavan/.m2/repository/commons-logging/commons-logging/1.4.0/commons-logging-1.4.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/spring-test/7.1.0/spring-test-7.1.0.jar:/Users/rohitchavan/.m2/repository/org/xmlunit/xmlunit-core/2.14.0/xmlunit-core-2.14.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.2.0/spring-boot-webmvc-test-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-web-server/4.2.0/spring-boot-web-server-4.2.0.jar:/Users/rohitchavan/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.2.0/spring-boot-resttestclient-4.2.0.jar"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/rohitchavan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-07-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/26.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/rohitchavan/my-projects/mcpclient"/>
+    <property name="java.vm.compressedOopsMode" value="Non-zero disjoint base"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/rohitchavan/my-projects/mcpclient/target/surefire/surefirebooter-20261126113018087_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="26.0.2"/>
+    <property name="user.name" value="rohitchavan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="27.2.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/rohitchavan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/bz/770wl_y5317glj1rsc4q7k080000gn/T/"/>
+    <property name="java.version" value="26.0.2"/>
+    <property name="user.dir" value="/Users/rohitchavan/my-projects/mcpclient"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="38361"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/rohitchavan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="26.0.2"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="70.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[mcpclient] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.mcpclient.McpclientApplicationTests" time="0.005">
+    <error message="Failed to load ApplicationContext for [WebMergedContextConfiguration@7f4596d0 testClass = com.example.mcpclient.McpclientApplicationTests, locations = [], classes = [com.example.mcpclient.McpclientApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@470a696f, org.springframework.boot.test.http.client.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@16f7b4af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58bf8650, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ba534b0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@7383eae2, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@24fb6a80, org.springframework.boot.test.context.SpringBootTestAnnotation@c80807d7], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@7f4596d0 testClass = com.example.mcpclient.McpclientApplicationTests, locations = [], classes = [com.example.mcpclient.McpclientApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@470a696f, org.springframework.boot.test.http.client.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@16f7b4af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58bf8650, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ba534b0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@7383eae2, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@24fb6a80, org.springframework.boot.test.context.SpringBootTestAnnotation@c80807d7], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:195)
+	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:214)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:245)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1724)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at java.base/java.util.Optional.orElseGet(Optional.java:368)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncClientExchangeFilterFunction': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:346)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1118)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:995)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:622)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:431)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:143)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:588)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:143)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:102)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167)
+	... 21 more
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'mcp.token' in value "${mcp.token}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:972)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1678)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	... 45 more
+]]></error>
+    <system-out><![CDATA[11:30:18.439 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.mcpclient.McpclientApplicationTests]: McpclientApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:30:18.483 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.mcpclient.McpclientApplication for test class com.example.mcpclient.McpclientApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.2.0)
+
+2026-11-26T11:30:18.641+05:30  INFO 38361 --- [mcpclient] [           main] c.e.mcpclient.McpclientApplicationTests  : Starting McpclientApplicationTests using Java 26.0.2 with PID 38361 (started by rohitchavan in /Users/rohitchavan/my-projects/mcpclient)
+2026-11-26T11:30:18.642+05:30  INFO 38361 --- [mcpclient] [           main] c.e.mcpclient.McpclientApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-11-26T11:30:18.915+05:30  WARN 38361 --- [mcpclient] [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncClientExchangeFilterFunction': Injection of autowired dependencies failed
+2026-11-26T11:30:18.922+05:30  INFO 38361 --- [mcpclient] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-26T11:30:18.928+05:30 ERROR 38361 --- [mcpclient] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncClientExchangeFilterFunction': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:346) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1118) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:995) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:622) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:431) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:143) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:588) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:143) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:102) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:214) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:245) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1724) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:368) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:256) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:228) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:189) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:109) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:168) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:126) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:71) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:66) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:65) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:71) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:125) ~[surefire-api-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithCancellationToken(LauncherAdapter.java:68) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:54) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:334) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:304) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:251) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:409) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:190) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:547) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:535) ~[surefire-booter-3.6.1.jar:3.6.1]
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'mcp.token' in value "${mcp.token}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:972) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1678) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1657) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.1.0.jar:7.1.0]
+	... 110 common frames omitted
+
+2026-11-26T11:30:18.931+05:30  WARN 38361 --- [mcpclient] [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.example.mcpclient.McpclientApplicationTests@6002e944]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@7f4596d0 testClass = com.example.mcpclient.McpclientApplicationTests, locations = [], classes = [com.example.mcpclient.McpclientApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@470a696f, org.springframework.boot.test.http.client.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@16f7b4af, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@58bf8650, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@4ba534b0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.webmvc.test.autoconfigure.WebDriverContextCustomizer@7383eae2, org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@24fb6a80, org.springframework.boot.test.context.SpringBootTestAnnotation@c80807d7], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:195) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:214) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:139) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:245) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1724) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.Optional.orElseGet(Optional.java:368) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70) ~[junit-jupiter-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:139) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58) ~[junit-platform-engine-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:256) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:228) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:189) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:109) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:168) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:137) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:126) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:71) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:66) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:65) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:71) ~[junit-platform-launcher-6.1.3.jar:6.1.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:125) ~[surefire-api-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithCancellationToken(LauncherAdapter.java:68) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:54) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:334) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:304) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:251) ~[surefire-junit-platform-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:409) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:190) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:547) ~[surefire-booter-3.6.1.jar:3.6.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:535) ~[surefire-booter-3.6.1.jar:3.6.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncClientExchangeFilterFunction': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:346) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:344) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1118) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:995) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:622) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:431) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:143) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454) ~[spring-boot-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:588) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:143) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:102) ~[spring-boot-test-4.2.0.jar:4.2.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247) ~[spring-test-7.1.0.jar:7.1.0]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167) ~[spring-test-7.1.0.jar:7.1.0]
+	... 86 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'mcp.token' in value "${mcp.token}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:296) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:129) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:96) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:286) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:257) ~[spring-core-7.1.0.jar:7.1.0]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:184) ~[spring-context-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:972) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1678) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1657) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.1.0.jar:7.1.0]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.1.0.jar:7.1.0]
+	... 110 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.client.ChatClient' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.chat.client.enabled=true) matched (OnPropertyCondition)
+
+   ChatClientAutoConfiguration#chatClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.client.ChatClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration#chatClientBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.chat.client.autoconfigure.ChatClientBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration#toolCallingAdvisorBuilder matched:
+      - @ConditionalOnBean (types: org.springframework.ai.model.tool.ToolCallingManager; SearchStrategy: all) found bean 'toolCallingManager'; @ConditionalOnMissingBean (types: org.springframework.ai.chat.client.advisor.ToolCallingAdvisor$Builder<?>; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   ChatMemoryAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.ai.chat.memory.ChatMemory', 'org.springframework.ai.chat.memory.ChatMemoryRepository' (OnClassCondition)
+
+   ChatMemoryAutoConfiguration#chatMemory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.memory.ChatMemory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatMemoryAutoConfiguration#chatMemoryRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.memory.ChatMemoryRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatObservationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.model.ChatModel' (OnClassCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   CodecsAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.codec.CodecConfigurer', 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.codecs.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration#jacksonCodecCustomizer matched:
+      - @ConditionalOnBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) found bean 'jacksonJsonMapper' (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   EmbeddingObservationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.embedding.EmbeddingModel' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.webmvc.autoconfigure.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.web.error.whitelabel.enabled=true) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpClientAutoConfiguration#httpClientSettings matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.http.client.HttpClientSettings; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.servlet.encoding.enabled=true) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication not a reactive web application (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConvertersCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ImperativeHttpClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.client.ClientHttpRequestFactory' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication not a reactive web application (NotReactiveWebApplicationCondition)
+
+   ImperativeHttpClientAutoConfiguration#clientHttpRequestFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.client.ClientHttpRequestFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ImperativeHttpClientAutoConfiguration#clientHttpRequestFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.http.client.ClientHttpRequestFactoryBuilder<?>; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration#jacksonJsonMapper matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonFactory matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.core.json.JsonFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JsonProblemDetailsConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.ProblemDetail' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonJsonHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) found bean 'jacksonJsonMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonJsonHttpMessageConverterConfiguration#jacksonJsonHttpMessageConvertersCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.JacksonJsonHttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedJacksonJsonHttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJacksonJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   MessageSourceAutoConfiguration#resourceBasedMessageSourceConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.context.ResourceBasedMessageSourceConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnBooleanProperty (spring.servlet.multipart.enabled=true) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: jakarta.servlet.MultipartConfigElement; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaApiAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.api.OllamaApi' (OnClassCondition)
+
+   OllamaApiAutoConfiguration#ollamaApi matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.api.OllamaApi; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaApiAutoConfiguration#ollamaConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.ollama.autoconfigure.OllamaConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaChatAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.OllamaChatModel' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.model.chat=ollama) matched (OnPropertyCondition)
+
+   OllamaChatAutoConfiguration#ollamaChatModel matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.OllamaChatModel; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaEmbeddingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.OllamaEmbeddingModel' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.model.embedding=ollama) matched (OnPropertyCondition)
+
+   OllamaEmbeddingAutoConfiguration#ollamaEmbeddingModel matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.OllamaEmbeddingModel; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ReactiveHttpClientAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.client.reactive.ClientHttpConnector', 'reactor.core.publisher.Mono' (OnClassCondition)
+      - Detected ClientHttpConnectorBuilder (ConditionalOnClientHttpConnectorBuilderDetection)
+
+   ReactiveHttpClientAutoConfiguration#clientHttpConnector matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.client.reactive.ClientHttpConnector; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactiveHttpClientAutoConfiguration#clientHttpConnectorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.http.client.reactive.ClientHttpConnectorBuilder<?>; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactorAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'reactor.core.publisher.Hooks' (OnClassCondition)
+
+   RestClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestClient' (OnClassCondition)
+
+   RestClientAutoConfiguration#restClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.client.RestClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.restclient.autoconfigure.RestClientBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientSsl matched:
+      - @ConditionalOnBean (types: org.springframework.boot.ssl.SslBundles; SearchStrategy: all) found bean 'sslBundleRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.restclient.autoconfigure.RestClientSsl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration.HttpMessageConvertersConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverters' (OnClassCondition)
+
+   RestClientAutoConfiguration.HttpMessageConvertersConfiguration#httpMessageConvertersRestClientCustomizer matched:
+      - @ConditionalOnBean (types: org.springframework.boot.http.converter.autoconfigure.ClientHttpMessageConvertersCustomizer; SearchStrategy: all) found beans 'clientConvertersCustomizer', 'jacksonJsonHttpMessageConvertersCustomizer', 'stringHttpMessageConvertersCustomizer' (OnBeanCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.web.client.RestTemplate', 'org.springframework.http.converter.HttpMessageConverters' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication not a reactive web application (NotReactiveWebApplicationCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.restclient.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringAiRetryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.retry.RetryUtils' (OnClassCondition)
+
+   SpringAiRetryAutoConfiguration#responseErrorHandler matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.client.ResponseErrorHandler; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringAiRetryAutoConfiguration#retryTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.core.retry.RetryTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorContextPropagationConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.context.ContextSnapshot' (OnClassCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TomcatMetricsAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'io.micrometer.core.instrument.binder.tomcat.TomcatMetrics', 'org.apache.catalina.Manager', 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+
+   TomcatServletWebServerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.ServletRequest', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol', 'org.springframework.boot.tomcat.servlet.TomcatServletWebServerFactory' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   TomcatServletWebServerAutoConfiguration#tomcatServletWebServerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.server.servlet.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.model.ChatModel' (OnClassCondition)
+
+   ToolCallingAutoConfiguration#toolCallbackResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.tool.resolution.ToolCallbackResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration#toolCallingManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.tool.ToolCallingManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration#toolExecutionExceptionProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.tool.execution.ToolExecutionExceptionProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebClientAutoConfiguration#webClientHttpConnectorCustomizer matched:
+      - @ConditionalOnBean (types: org.springframework.http.client.reactive.ClientHttpConnector; SearchStrategy: all) found bean 'clientHttpConnector' (OnBeanCondition)
+
+   WebClientAutoConfiguration#webClientSsl matched:
+      - @ConditionalOnBean (types: org.springframework.boot.ssl.SslBundles; SearchStrategy: all) found bean 'sslBundleRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.webclient.autoconfigure.WebClientSsl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebClientAutoConfiguration.WebClientCodecsConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.http.codec.CodecCustomizer; SearchStrategy: all) found beans 'jacksonCodecCustomizer', 'defaultCodecCustomizer' (OnBeanCondition)
+
+   WebClientAutoConfiguration.WebClientCodecsConfiguration#exchangeStrategiesCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webclient.autoconfigure.WebClientCodecCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnBooleanProperty (spring.mvc.formcontent.filter.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#viewNameTranslator matched:
+      - @ConditionalOnMissingBean (names: viewNameTranslator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration#chatClientCompletionObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.client.observations.log-completion=true) did not find property 'log-completion' (OnPropertyCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration#chatClientPromptContentObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.client.observations.log-prompt=true) did not find property 'log-prompt' (OnPropertyCondition)
+
+   ChatClientAutoConfiguration.TracerPresentObservationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   ChatObservationAutoConfiguration#chatModelMeterObservationHandler:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration#chatModelCompletionObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.observations.log-completion=true) did not find property 'log-completion' (OnPropertyCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration#chatModelPromptContentObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.observations.log-prompt=true) did not find property 'log-prompt' (OnPropertyCondition)
+
+   ChatObservationAutoConfiguration.TracerPresentObservationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   CodecsAutoConfiguration.Jackson2JsonCodecConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   CodecsAutoConfiguration.KotlinxSerializationJsonCodecConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'kotlinx.serialization.json.Json' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   EmbeddingObservationAutoConfiguration#embeddingModelMeterObservationHandler:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   HttpClientMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.metrics.autoconfigure.MetricsProperties' (OnClassCondition)
+
+   HttpServiceClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.service.registry.HttpServiceProxyRegistry; SearchStrategy: all) did not find any beans of type org.springframework.web.service.registry.HttpServiceProxyRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.client.support.RestClientAdapter' (OnClassCondition)
+
+   Jackson2HttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   Jackson2HttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.CborConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.cbor.CBORMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.XmlConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.JacksonXmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) found different value in property 'spring.jmx.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   KotlinSerializationHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'kotlinx.serialization.Serializable', 'kotlinx.serialization.json.Json' (OnClassCondition)
+
+   MessageSourceAutoConfiguration#messageSource:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   ReactiveHttpClientAutoConfiguration.ReactorNetty:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyConfigurations' (OnClassCondition)
+
+   ReactiveHttpServiceClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.service.registry.HttpServiceProxyRegistry; SearchStrategy: all) did not find any beans of type org.springframework.web.service.registry.HttpServiceProxyRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.reactive.function.client.support.WebClientAdapter' (OnClassCondition)
+
+   RestClientObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   RestTemplateObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   ServletHttpExchangesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository' (OnBeanCondition)
+
+   ServletManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties' (OnClassCondition)
+
+   ServletMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   ServletWebServerConfiguration#forwardedHeaderFilter:
+      Did not match:
+         - @ConditionalOnForwardedHeaderStrategy did not find forwarded header strategy FRAMEWORK (OnForwardedHeaderStrategyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.application.admin.enabled=true) did not find property 'spring.application.admin.enabled' (OnPropertyCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerWrapperConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans of type org.springframework.scheduling.annotation.AsyncConfigurer (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorContextPropagationConfiguration#contextPropagatingTaskDecorator:
+      Did not match:
+         - @ConditionalOnProperty (spring.task.execution.propagate-context=true) did not find property 'spring.task.execution.propagate-context' (OnPropertyCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TomcatMetricsAutoConfiguration#tomcatMetricsBinder:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+
+   TomcatReactiveManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   TomcatReactiveWebServerAutoConfiguration:
+      Did not match:
+         - not a reactive web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.springframework.http.ReactiveHttpInputMessage', 'org.apache.catalina.startup.Tomcat', 'org.springframework.boot.tomcat.reactive.TomcatReactiveWebServerFactory' (OnClassCondition)
+
+   TomcatServletManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   TomcatServletWebServerAutoConfiguration#tomcatForwardedHeaderFilterCustomizer:
+      Did not match:
+         - @ConditionalOnForwardedHeaderStrategy did not find forwarded header strategy FRAMEWORK (OnForwardedHeaderStrategyCondition)
+
+   TomcatWebServerConfiguration:
+      Did not match:
+         - Application is deployed as a WAR file. (OnWarDeploymentCondition)
+
+   ToolCallingAutoConfiguration#toolCallingContentObservationFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.tools.observations.include-content=true) did not find property 'include-content' (OnPropertyCondition)
+
+   WebClientAutoConfiguration#webClientBuilder:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.reactive.function.client.WebClient$Builder; SearchStrategy: all) found beans of type 'org.springframework.web.reactive.function.client.WebClient$Builder' webClientBuilder (OnBeanCondition)
+
+   WebClientObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.mvc.hiddenmethod.filter.enabled=true) did not find property 'spring.mvc.hiddenmethod.filter.enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.mvc.problemdetails.enabled=true) did not find property 'spring.mvc.problemdetails.enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarVersionLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebMvcHealthEndpointExtensionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.actuate.endpoint.HealthEndpoint' (OnClassCondition)
+
+   WebMvcMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   WebMvcObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.http.client.autoconfigure.HttpClientAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.http.client.autoconfigure.service.HttpServiceClientPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+]]></system-err>
+  </testcase>
+</testsuite>
